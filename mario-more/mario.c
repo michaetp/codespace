@@ -7,9 +7,9 @@ int main(void)
     int h;
     do
     {
-        h = get_int("Height: ")
+        h = get_int("Height: ");
     }
-    
+    while (h > 0);
     //print first row of pyramid
     //make algorithm for pyramid structure (growing base)
 }

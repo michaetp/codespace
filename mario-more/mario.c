@@ -11,17 +11,24 @@ int main(void)
     }
     while (y < 1);
 
-    //print first row of pyramid
+    //print spaces increasing
 
     for (int x = 0; x < y; x++)
     {
-        for (int p = 0; p < (x-1); p++)
+        for (int p = 0; p < (y - x - 1); p++)
         {
             printf(".");
+
+        }
+        for (int p = 0; p < (x); p++)
+        {
+            printf("#");
+
         }
         printf("\n");
     }
 
 
-    //make algorithm for pyramid structure (growing base)
+    //print # decreasing
+
 }

@@ -13,7 +13,7 @@ int main(void)
 
     //print first row of pyramid
 
-    for (int h; h < h; h++)
+    for (int p = 0; p < h; p++)
     {
         printf(".");
         printf("#");

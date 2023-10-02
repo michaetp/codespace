@@ -13,7 +13,10 @@ int main(void)
 
     //print first row of pyramid
 
-    printf(".")
-    printf("#")
+    for (int h; h < h; h++)
+    {
+        printf(".");
+        printf("#");
+    }
     //make algorithm for pyramid structure (growing base)
 }

@@ -5,7 +5,10 @@ int main(void)
 {
     //ask for height input
     int h;
-    h = get_int
+    do
+    {
+        h = get_int("Height: ")
+    }
     //print first row of pyramid
     //make algorithm for pyramid structure (growing base)
 }

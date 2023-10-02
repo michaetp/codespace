@@ -17,6 +17,9 @@ int main(void)
     {
         printf(".");
     }
-
+    for (int x = 0; x < y; y++)
+    {
+        printf("#");
+    }
     //make algorithm for pyramid structure (growing base)
 }

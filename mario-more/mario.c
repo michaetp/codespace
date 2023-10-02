@@ -15,17 +15,13 @@ int main(void)
 
     for (int x = 0; x < y; x++)
     {
-        if()
         for (int p = 0; p < (y - x - 1); p++)
         {
             printf(".");
-
         }
-
         for (int p = 0; p < (x); p++)
         {
             printf("#");
-
         }
         printf("\n");
     }

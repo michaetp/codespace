@@ -4,12 +4,12 @@
 int main(void)
 {
     //ask for height input
-    int m;
+    int h;
     do
     {
-        m = get_int("Start Size: ");
+        h = get_int("Height: ");
     }
-    while (m < 9);
+    while (h > 9);
 
     //print first row of pyramid
     //make algorithm for pyramid structure (growing base)

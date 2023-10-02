@@ -4,19 +4,19 @@
 int main(void)
 {
     //ask for height input
-    int h;
+    int y;
     do
     {
-        h = get_int("Height: ");
+        y = get_int("Height: ");
     }
-    while (h < 1);
+    while (y < 1);
 
     //print first row of pyramid
 
-    for (int p = 0; p < (h-1); h--)
+    for (int x = 0; x < (y-1); y--)
     {
         printf(".");
     }
-    printf("\n");
+
     //make algorithm for pyramid structure (growing base)
 }

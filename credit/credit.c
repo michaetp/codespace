@@ -3,7 +3,11 @@
 
 int main(void)
 {
-    long credit = get_long("Number: ");
+    long credit;
+    do
+    {
+        credit = get_long("Number: ");
+    }
+    while ((credit / 100000000000000) < 1 || (credit / 100000000000000) > 10);
 }
 
-int numcheck(long credit)

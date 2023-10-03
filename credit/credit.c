@@ -1,7 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int everyotherdigit(long credit);
 
 int main(void)
 {
@@ -13,7 +12,6 @@ int main(void)
     //while ((credit/10) > 0)
     {
     credit = (credit / 10);
-    
     }
     printf("%i\n", countno);
 }

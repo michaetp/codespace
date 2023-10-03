@@ -1,6 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
+int everyotherdigit(long credit);
+
 int main(void)
 {
     long credit;
@@ -12,3 +14,19 @@ int main(void)
 
 }
 
+int everyotherdigit(long credit)
+{
+    int sum = 0;
+    bool isAlternate = false;
+    while (credit > 0)
+    {
+        if (isAlternate == true)
+        {
+            int lastdigit = credit % 10;
+            sum = sum + (lastdigit * 2);
+        }
+        credit = credit / 10;
+        isAlternate = !isAlternate;
+    }
+    return sum;
+}

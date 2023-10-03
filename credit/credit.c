@@ -16,14 +16,14 @@ int main(void)
 
 int everyotherdigit(long credit)
 {
-    int sum = 0;
+    int sumalt = 0;
     bool isAlternate = false;
     while (credit > 0)
     {
         if (isAlternate == true)
         {
             int lastdigit = credit % 10;
-            sum = sum + (lastdigit * 2);
+            sumalt = sumalt + (lastdigit * 2);
         }
         credit = credit / 10;
         isAlternate = !isAlternate;

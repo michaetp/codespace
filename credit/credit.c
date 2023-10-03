@@ -42,5 +42,16 @@ int main(void)
             printf("VISA\n");
         }
     }
+
+// Check if VISA 13
+    if(countno == 13)
+    {
+        long first_digit = originalcredit / pow(10,12);
+        if(first_digit == 4)
+        {
+            printf("VISA\n");
+        }
+    }
+    
 }
 

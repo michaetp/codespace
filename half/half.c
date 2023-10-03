@@ -12,12 +12,12 @@ int main(void)
     float t = get_float("Sale Tax Percent: ");
     float tip = get_float("Tip percent: ");
 
-    printf("You will owe $%f each!\n", half(b, t, tip));
+    printf("You will owe $%.2f each!\n", half(b, t, tip));
 }
 
 // TODO: Complete the function
 float half(float b, float t, float tip)
 {
-    float half = (b * (1 + ((t + tip) / 100))) / 2;
+    float half = (b + (1 + (t/100))) / 2;
     return half;
 }

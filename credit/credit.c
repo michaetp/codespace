@@ -19,3 +19,11 @@ int main(void)
 
 }
 
+int isAMEX(int countno)
+{
+    int countno;
+    if(countno == 15)
+    {
+        if(credit)
+    }
+}

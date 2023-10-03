@@ -9,8 +9,8 @@ int main(void)
         credit = get_long("16-Digit Number: ");
     }
     while ((credit / 1000000000000000) < 1 || (credit / 1000000000000000) > 10);
-
-    printf("%li", credit);
+    
+    printf("%li\n", credit);
 }
 
 int everyotherdigit(long credit)
@@ -22,10 +22,10 @@ int everyotherdigit(long credit)
         if (isAlternate == true)
         {
             int lastdigit = credit % 10;
-            credit = credit / 10;
             sum = sum + (lastdigit * 2);
-            isAlternate = !isAlternate;
         }
+        credit = credit / 10;
+        isAlternate = !isAlternate;
     }
     return sum;
 }

@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    //ask for height input
+    // ask for height input
     int y;
     do
     {
@@ -11,7 +11,7 @@ int main(void)
     }
     while (y < 1);
 
-    //print spaces increasing
+    // print spaces increasing
 
     for (int x = 0; x < y; x++)
     {
@@ -30,8 +30,4 @@ int main(void)
         }
         printf("\n");
     }
-
-
-    //print # decreasing
-
 }

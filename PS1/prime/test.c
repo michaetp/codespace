@@ -16,7 +16,7 @@ int main(void)
     printf("\n%d", result);
 
     // for different values
-    x = 4;
+    x = 13;
     y = 2;
     result = x % y;
     printf("\n%d", result);

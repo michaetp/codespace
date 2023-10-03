@@ -19,5 +19,5 @@ int main(void)
 float half(float b, float t, int tip)
 {
     float half = (b + (t / 100) + (tip / 100)) / 2;
-    return 0.0;
+    return half;
 }

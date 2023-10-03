@@ -4,7 +4,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-float half(float bill, float tax, int tip);
+float half(float b, float t, int tip);
 
 int main(void)
 {
@@ -16,8 +16,8 @@ int main(void)
 }
 
 // TODO: Complete the function
-float half(float bill, float tax, int tip)
+float half(float b, float t, int tip)
 {
-    
+    half = (b + (t / 100) + (tip / 100)) / 2
     return 0.0;
 }

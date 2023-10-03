@@ -18,6 +18,6 @@ int main(void)
 // TODO: Complete the function
 float half(float b, float t, float tip)
 {
-    float half = (b + (1 + (t/100))) / 2;
+    float half = ((b * (1 + (t / 100))) * (1 + (tip / 100))) / 2;
     return half;
 }

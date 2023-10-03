@@ -6,4 +6,4 @@ int main(void)
     long credit = get_long("Number: ");
 }
 
-int numcheck(c)
+int numcheck(long credit)

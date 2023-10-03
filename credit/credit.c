@@ -8,12 +8,14 @@ int main(void)
     long credit;
     credit = get_long("16-Digit Number: ");
 
-    int countno = 1;
-    while ((credit/10) > 0)
+    int countno = 0;
+    while (credit > 0)
     {
-    credit = (credit / 10);
-    countno = countno + 1;
+        credit = (credit / 10);
+        countno = countno + 1;
     }
-    printf("%i\n", countno);
+
+    if(countno < 13)
+
 }
 

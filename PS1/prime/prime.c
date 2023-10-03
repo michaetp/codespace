@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <stdbool.h>
 
 bool prime(int number);
 
@@ -35,9 +36,12 @@ bool prime(int number)
     {
         return false;
     }
-    if (number % i) == 0
+    for (int i = 2; i * i <= number; i++)
     {
-        return false;
+        if (number % i) = 0
+        {
+            return false;
+        }
     }
-
+    return true;
 }

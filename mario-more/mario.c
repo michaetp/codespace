@@ -15,16 +15,16 @@ int main(void)
 
     for (int x = 0; x < y; x++)
     {
-        for (int p = 0; p < (y - x - 1); p++)
+        for (int p = 0; p < (y - x); p++)
         {
             printf(" ");
         }
-        for (int p = 0; (p - 1) < (x); p++)
+        for (int hash = 0; hash < (x); hash++)
         {
             printf("#");
         }
         printf("  ");
-        for (int p = 0; (p - 1) < (x); p++)
+        for (int hash = 0; hash < (x); p++)
         {
             printf("#");
         }

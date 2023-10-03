@@ -37,7 +37,7 @@ int main(void)
         }
 
         long first_digit = originalcredit / pow(10,15);
-        if(first_two_digits == 34 || first_two_digits == 37)
+        if(first_digit == 4)
         {
             printf("VISA\n");
         }

@@ -3,6 +3,7 @@
 
 int main(void)
 {
-    long num = get_long("Number: ");
-    
+    long credit = get_long("Number: ");
 }
+
+int numcheck(c)

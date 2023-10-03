@@ -7,7 +7,7 @@ int main(void)
     int result;
 
     x = 3;
-    y = 4;
+    y = 3;
     // using modulo operator
     result = x % y;
     printf("%d", result);

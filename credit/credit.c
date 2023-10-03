@@ -6,6 +6,8 @@ int main(void)
 {
     long credit;
     credit = get_long("Credit Number: ");
+    long originalcredit;
+    originalcredit = credit;
 
     int countno = 0;
     while (credit > 0)
@@ -17,7 +19,7 @@ int main(void)
 
     if(countno == 15)
     {
-        if((credit / pow(10,13)) == 34 || (credit / pow(10,13)) == 37)
+        if((originalcredit / pow(10,13)) == 34 || (originalcredit / pow(10,13)) == 37)
         {
             printf("AMEX/n");
         }

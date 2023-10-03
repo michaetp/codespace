@@ -6,8 +6,11 @@ int main(void)
     long credit;
     do
     {
-        credit = get_long("Number: ");
+        credit = get_long("16-Digit Number: ");
     }
     while ((credit / 1000000000000000) < 1 || (credit / 1000000000000000) > 10);
 }
 
+int everyotherdigit(long credit)
+
+credit

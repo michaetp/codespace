@@ -17,14 +17,14 @@ int main(void)
     {
         for (int p = 0; p < (y - x - 1); p++)
         {
-            printf(".");
+            printf(" ");
         }
-        for (int p = 0; p < (x); p++)
+        for (int p = 0; (p - 1) < (x); p++)
         {
             printf("#");
         }
-        printf("..");
-        for (int p = 0; p < (x); p++)
+        printf("  ");
+        for (int p = 0; (p - 1) < (x); p++)
         {
             printf("#");
         }

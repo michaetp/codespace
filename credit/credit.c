@@ -15,7 +15,7 @@ int main(void)
         countno = countno + 1;
     }
 
-    if(countno == )
+    if(countno == 15)
 
 }
 

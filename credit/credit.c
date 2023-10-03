@@ -36,7 +36,7 @@ int main(void)
             printf("MASTERCARD\n");
         }
 
-        long first_digit = 
+        long first_digit = originalcredit / pow(10,15);
         if(first_two_digits == 34 || first_two_digits == 37)
         {
             printf("VISA\n");

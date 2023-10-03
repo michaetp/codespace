@@ -24,6 +24,10 @@ int isAMEX(int countno)
     int countno;
     if(countno == 15)
     {
-        if(credit)
+        if((credit / (10^13)) == 34 || (credit / (10^13)) == 37)
+        {
+            printf("AMEX/n");
+        }
     }
+    
 }

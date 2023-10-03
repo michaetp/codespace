@@ -4,5 +4,5 @@
 int main(void)
 {
     long num = get_long("Number: ")
- isAlternateDigit 
+ 
 }

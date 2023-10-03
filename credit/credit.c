@@ -8,7 +8,7 @@ int main(void)
     long credit;
     credit = get_long("16-Digit Number: ");
 
-    int countno = 0;
+    int countno = 1;
     while ((credit/10) > 0)
     {
     credit = (credit / 10);

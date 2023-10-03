@@ -4,5 +4,9 @@
 int main(void)
 {
     long num;
-    num = get_long("Credit card number to validate: ")
+    do
+    {
+        num = get_long("Number: ");
+    }
+    while (longlen(num) < 16);
 }

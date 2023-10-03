@@ -31,8 +31,8 @@ int main(void)
 bool prime(int number)
 {
     // TODO
-    int i;
-    if((i % 2) > 0)
+    int j = 0;
+    if((j % 2) > 0)
     {
     }
     return false;

@@ -35,6 +35,11 @@ bool prime(int number)
     {
         return false;
     }
-    for (int i = 2, )
-    return false;
+    for (int j = 2, j <= number, j++)
+    {
+        if (number % j) == 0
+        {
+            return false;
+        }
+    }
 }

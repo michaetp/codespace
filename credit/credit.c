@@ -7,12 +7,13 @@ int main(void)
     long credit;
     credit = get_long("16-Digit Number: ");
 
-    for (int countno = 0; (credit/10) > 0; countno++)
-    //int countno = 1;
-    //while ((credit/10) > 0)
+    int countno = 0;
+
+    for (; credit > 0; credit = credit / 10)
     {
-    credit = (credit / 10);
+        countno++;
     }
+
     printf("%i\n", countno);
 }
 

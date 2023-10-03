@@ -23,6 +23,11 @@ int main(void)
         {
             printf("#");
         }
+        printf("..");
+        for (int p = 0; p < (x); p++)
+        {
+            printf("#");
+        }
         printf("\n");
     }
 

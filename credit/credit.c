@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int everyotherdigit(long credit);
+int isAMEX(int countno);
 
 int main(void)
 {

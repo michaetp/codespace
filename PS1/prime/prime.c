@@ -33,7 +33,10 @@ bool prime(int number)
     // TODO
     for (int i = min; i <= max; i++)
     {
-        if ()
+        if (i % 2)
+        {
+            
+        }
     }
     return false;
 }

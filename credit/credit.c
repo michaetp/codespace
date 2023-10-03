@@ -5,7 +5,7 @@
 int main(void)
 {
     long credit;
-    credit = get_long("16-Digit Number: ");
+    credit = get_long("Credit Number: ");
 
     int countno = 0;
     while (credit > 0)
@@ -13,6 +13,7 @@ int main(void)
         credit = (credit / 10);
         countno = countno + 1;
     }
+    printf("%i\n", countno);
 
     if(countno == 15)
     {

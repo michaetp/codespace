@@ -19,9 +19,10 @@ int main(void)
 
     if(countno == 15)
     {
-        if((originalcredit / pow(10,13)) == 34 || (originalcredit / pow(10,13)) == 37)
+        long first_two_digits = originalcredit / pow(10,13);
+        if(first_two_digits == 34 || first_two_digits == 37)
         {
-            printf("AMEX/n");
+            printf("AMEX\n");
         }
     }
 

@@ -24,7 +24,7 @@ int main(void)
             printf("#");
         }
         printf("  ");
-        for (int hash = 0; hash < (x); p++)
+        for (int hash = 0; hash < (x); hash++)
         {
             printf("#");
         }

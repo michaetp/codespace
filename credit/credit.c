@@ -8,6 +8,6 @@ int main(void)
     {
         credit = get_long("Number: ");
     }
-    while ((credit / 100000000000000) < 1 || (credit / 100000000000000) > 10);
+    while ((credit / 1000000000000000) < 1 || (credit / 1000000000000000) > 10);
 }
 

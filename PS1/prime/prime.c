@@ -36,7 +36,7 @@ bool prime(int number)
         if (number <=1)
         return false;
 
-        if (number % i == 0)
+        if (number % j == 0)
         return false;
     }
 }

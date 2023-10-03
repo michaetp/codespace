@@ -13,7 +13,7 @@ int main(void)
     //while ((credit/10) > 0)
     {
     credit = (credit / 10);
-    countno = countno + 1;
+    
     }
     printf("%i\n", countno);
 }

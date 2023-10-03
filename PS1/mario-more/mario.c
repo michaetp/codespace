@@ -19,12 +19,12 @@ int main(void)
         {
             printf(" ");
         }
-        for (int hash = 0; hash < (x); hash++)
+        for (int hash = 0; hash <= (x); hash++)
         {
             printf("#");
         }
         printf("  ");
-        for (int hash = 0; hash < (x); hash++)
+        for (int hash = 0; hash <= (x); hash++)
         {
             printf("#");
         }

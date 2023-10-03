@@ -11,8 +11,8 @@ int main(void)
     for (int countno = 1; (credit/10) > 0; countno++)
     {
     credit = (credit / 10);
-    countno = countno + 1;
-    }
     printf("%i\n", countno);
+    }
+
 }
 

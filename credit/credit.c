@@ -15,11 +15,13 @@ int main(void)
 int everyotherdigit(long credit)
 {
     int sum = 0;
+    bool isAlternate = false;
     while (credit > 0)
     {
         int lastdigit = credit % 10;
         credit = credit / 10;
         sum = sum + (lastdigit * 2);
+        isAlternate = !isAlternate;
     }
     return sum;
 }

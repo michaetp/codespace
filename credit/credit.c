@@ -8,5 +8,5 @@ int main(void)
     {
         num = get_long("Number: ");
     }
-    while (longlen(num) < 16);
+    while ();
 }

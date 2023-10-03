@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <math.h>
 
 int main(void)
 {
@@ -15,7 +16,7 @@ int main(void)
 
     if(countno == 15)
     {
-        if((credit / (10^13)) == 34 || (credit / (10^13)) == 37)
+        if((credit / pow(10,13)) == 34 || (credit / pow(10,13)) == 37)
         {
             printf("AMEX/n");
         }

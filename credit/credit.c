@@ -3,6 +3,6 @@
 
 int main(void)
 {
-    long num = get_long("Number: ")
- 
+    long num = get_long("Number: ");
+    
 }

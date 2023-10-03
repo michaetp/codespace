@@ -31,12 +31,10 @@ int main(void)
 bool prime(int number)
 {
     // TODO
-    for (int j = 2, j < number, j++)
+    for (int j = 2; j < number; j++)
     {
-        if (number <=1)
-        return false;
-
         if (number % j == 0)
         return false;
     }
+    return true;
 }

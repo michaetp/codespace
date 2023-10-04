@@ -26,6 +26,7 @@ int main(void)
     if(LUHN(Luhncredit) == false)
     {
         printf("INVALID\n");
+        printf("%li\n",Luhncredit);
     }
     else
     {

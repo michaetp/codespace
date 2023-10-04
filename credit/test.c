@@ -8,11 +8,11 @@ int main(void)
     credit = get_long("Number: ");
     long originalcredit = credit;
     long Luhncredit = credit;
-    long lastno;
-    long s_lastno;
+    int lastno;
+    int s_lastno;
     int slp1;
     int slp2;
-    long total;
+    int total;
     while(Luhncredit >= 10)
     {
         lastno = Luhncredit % 10;
@@ -35,5 +35,5 @@ int main(void)
         total = total + lastno;
         Luhncredit = Luhncredit / 10;
     }
-    printf("%li\n", total);
+    printf("%i\n", total);
 }

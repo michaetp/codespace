@@ -6,14 +6,14 @@ bool isAMEX(long originalcredit);
 bool isMC(long originalcredit);
 bool isVISA13(long originalcredit);
 bool isVISA16(long originalcredit);
-bool LUHN(long originalcredit);
+bool LUHN(long Luhncredit);
 
 int main(void)
 {
     long credit;
     credit = get_long("Credit Number: ");
-    long originalcredit;
-    originalcredit = credit;
+    long originalcredit = credit;
+    long Luhncredit = credit;
 
     int countno = 0;
     while (credit > 0)
@@ -71,3 +71,7 @@ bool isVISA16(long originalcredit)
     return (first_digit == 4);
 }
 
+bool LUHN(long Luhncredit)
+{
+    sum
+}

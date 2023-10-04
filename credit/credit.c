@@ -91,7 +91,7 @@ bool LUHN(long Luhncredit)
         if((2 * s_lastno) > 9)
         {
             slp1 = s_lastno % 10;
-            slp2 = (s_lastno / 10) % 10;
+            slp2 = s_lastno / 10;
             total = total + lastno + slp1 + slp2;
         }
         else

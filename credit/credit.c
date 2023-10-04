@@ -27,6 +27,9 @@ int main(void)
         }
     }
 
+bool isAMEX(long )
+
+
 //Check if MasterCard or VISA
     if(countno == 16)
     {

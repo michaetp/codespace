@@ -83,7 +83,7 @@ bool LUHN(long Luhncredit)
     {
         lastno = Luhncredit % 10;
         s_lastno = (Luhncredit / 10) % 10;
-        total = total + lastno + (2* s_lastno);
+        total = total + lastno + (2 * s_lastno);
         Luhncredit = Luhncredit / 100;
     }
     return((total % 10) == 0);

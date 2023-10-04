@@ -73,5 +73,6 @@ bool isVISA16(long originalcredit)
 
 bool LUHN(long Luhncredit)
 {
-    sum
+    long second_to_last;
+    Luhncredit = Luhncredit % 10
 }

@@ -73,15 +73,17 @@ bool isVISA16(long originalcredit)
 
 bool LUHN(long Luhncredit)
 {
-    long second_to_last;
+    long lastno;
+    long s_lastno;
     long sum1;
     long total;
     while(Luhncredit > 99)
     {
-        second_to_last = (Luhncredit / 10) % 10;
+        lastno = Luhncredit % 10
+        s_lastno = (Luhncredit / 10) % 10;
         sum1 = sum1 + (second_to_last * 2);
         Luhncredit = Luhncredit / 100;
     }
-    
+
     return true;
 }

@@ -6,6 +6,7 @@ bool isAMEX(long originalcredit);
 bool isMC(long originalcredit);
 bool isVISA13(long originalcredit);
 bool isVISA16(long originalcredit);
+bool LUHN(long originalcredit);
 
 int main(void)
 {

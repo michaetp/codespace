@@ -23,7 +23,7 @@ int main(void)
     }
 
 //Check if Luhn algorithm pass
-    if(LUHN(Luhncredit) == true)
+    if(LUHN(Luhncredit) == false)
     {
         printf("INVALID\n");
     }
@@ -46,7 +46,7 @@ int main(void)
         {
             printf("VISA\n");
         }
-        
+
     }
 }
 

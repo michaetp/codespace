@@ -23,19 +23,19 @@ int main(void)
     }
 
 //Check if AMEX
-    if(countno == 15 && isAMEX(originalcredit))
+    if(countno == 15 && isAMEX(originalcredit) && LUHN(Luhncredit))
     {
         printf("AMEX\n");
     }
 
 //Check if MasterCard or VISA
-    if(countno == 16 && isMC(originalcredit))
+    if(countno == 16 && isMC(originalcredit) && LUHN(Luhncredit))
     {
         printf("MASTERCARD\n");
     }
 
 // Check if VISA
-    if((countno == 13 && isVISA13(originalcredit)) || (countno == 16 && isVISA16(originalcredit)))
+    if(((countno == 13 && isVISA13(originalcredit)) || (countno == 16 && isVISA16(originalcredit))) && LUHN(Luhncredit))
     {
         printf("VISA\n");
     }
@@ -82,8 +82,7 @@ bool LUHN(long Luhncredit)
         total = total + lastno + (2* s_lastno);
         Luhncredit = Luhncredit / 100;
     }
-    if((total % 10) == 0)
-    {
+    
         return true;
     }
 }

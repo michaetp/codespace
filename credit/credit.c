@@ -31,7 +31,7 @@ int main(void)
     if(countno == 16)
     {
         long first_two_digits = originalcredit / pow(10,14);
-        if(first_two_digits == 51 || first_two_digits == 52 || first_two_digits == 53 || first_two_digits == 54 || first_two_digits == 55)
+        if(first_two_digits >= 51 || first_two_digits <= 55)
         {
             printf("MASTERCARD\n");
         }
@@ -52,6 +52,6 @@ int main(void)
             printf("VISA\n");
         }
     }
-    
+
 }
 

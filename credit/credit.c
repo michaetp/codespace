@@ -25,7 +25,7 @@ int main(void)
 //Check if Luhn algorithm pass
     if(!LUHN(Luhncredit))
     {
-        printf("INVALID\n");
+        printf("%B\n",);
     }
     else
     {
@@ -89,9 +89,5 @@ bool LUHN(long Luhncredit)
         total = total + lastno + (2* s_lastno);
         Luhncredit = Luhncredit / 100;
     }
-    if((total % 10) == 0)
-    {
-        return true;
-    }
-    return false;
+    return((total % 10) == 0);
 }

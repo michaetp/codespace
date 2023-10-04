@@ -19,9 +19,9 @@ int main(void)
         s_lastno = (Luhncredit / 10) % 10;
         if((2 * s_lastno) > 9)
         {
-            slp1 = s_lastno % 10;
-            slp2 = s_lastno / 10;
-            total += lastno + slp1 + slp2;
+            slp1 = (s_lastno % 10);
+            slp2 = (s_lastno / 10);
+            total += lastno + (s_lastno % 10) + (s_lastno / 10);
         }
         else
         {

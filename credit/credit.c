@@ -55,7 +55,7 @@ int main(void)
 
 bool isAMEX(long originalcredit)
 {
-    long first_two_digits = originalcredit / pow(10,13);
+    long first_two_digits = originalcredit / (10000000000000);
     return (first_two_digits == 34 || first_two_digits == 37);
 }
 

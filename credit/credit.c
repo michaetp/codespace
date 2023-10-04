@@ -92,19 +92,19 @@ bool LUHN(long Luhncredit)
         {
             slp1 = s_lastno % 10;
             slp2 = s_lastno / 10;
-            total = total + lastno + slp1 + slp2;
+            total += lastno + slp1 + slp2;
         }
         else
         {
-            total = total + lastno + (2 * s_lastno);
+            total += lastno + (2 * s_lastno);
         }
-        Luhncredit = Luhncredit / 100;
+        Luhncredit /= 100;
     }
     while(Luhncredit < 10 && Luhncredit > 0)
     {
         lastno = Luhncredit % 10;
-        total = total + lastno;
-        Luhncredit = Luhncredit / 10;
+        total += lastno;
+        Luhncredit /= 10;
     }
     return((total % 10) == 0);
 }

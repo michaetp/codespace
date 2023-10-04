@@ -12,7 +12,7 @@ int main(void)
     int s_lastno;
     int slp1;
     int slp2;
-    int total;
+    int total = 0;
     while(Luhncredit >= 10)
     {
         lastno = Luhncredit % 10;

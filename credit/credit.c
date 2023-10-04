@@ -22,28 +22,35 @@ int main(void)
         countno = countno + 1;
     }
 
-//Check if AMEX
-    if(countno == 15 && isAMEX(originalcredit) && LUHN(Luhncredit))
-    {
-        printf("AMEX\n");
-    }
-
-//Check if MasterCard or VISA
-    if(countno == 16 && isMC(originalcredit) && LUHN(Luhncredit))
-    {
-        printf("MASTERCARD\n");
-    }
-
-// Check if VISA
-    if(((countno == 13 && isVISA13(originalcredit)) || (countno == 16 && isVISA16(originalcredit))) && LUHN(Luhncredit))
-    {
-        printf("VISA\n");
-    }
-    else
+//Check if Luhn algorithm pass
+    if(!LUHN(Luhncredit))
     {
         printf("INVALID\n");
     }
+    else
+    {
+        //Check if AMEX
+        if(countno == 15 && isAMEX(originalcredit))
+        {
+            printf("AMEX\n");
+        }
 
+        //Check if MasterCard or VISA
+        else if(countno == 16 && isMC(originalcredit))
+        {
+            printf("MASTERCARD\n");
+        }
+
+        // Check if VISA
+        else if((countno == 13 && isVISA13(originalcredit)) || (countno == 16 && isVISA16(originalcredit)))
+        {
+            printf("VISA\n");
+        }
+        else
+        {
+            printf("INVALID\n");
+        }
+    }
 }
 
 bool isAMEX(long originalcredit)

@@ -61,7 +61,7 @@ bool isAMEX(long originalcredit)
 
 bool isMC(long originalcredit)
 {
-    long first_two_digits = originalcredit / pow(10,14);
+    long first_two_digits = originalcredit / (100000000000000);
     return (first_two_digits >= 51 && first_two_digits <= 55);
 }
 

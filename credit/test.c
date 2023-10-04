@@ -4,6 +4,10 @@
 
 int main(void)
 {
+    long credit;
+    credit = get_long("Number: ");
+    long originalcredit = credit;
+    long Luhncredit = credit;
     long lastno;
     long s_lastno;
     int slp1;
@@ -31,5 +35,5 @@ int main(void)
         total = total + lastno;
         Luhncredit = Luhncredit / 10;
     }
-    printf("%li\n", total)
+    printf("%li\n", total);
 }

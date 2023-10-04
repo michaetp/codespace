@@ -83,7 +83,7 @@ bool LUHN(long Luhncredit)
     long s_lastno;
     int slp1;
     int slp2;
-    long total=0;
+    long total;
     while(Luhncredit >= 10)
     {
         lastno = Luhncredit % 10;

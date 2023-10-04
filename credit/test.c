@@ -10,8 +10,6 @@ int main(void)
     long Luhncredit = credit;
     int lastno;
     int s_lastno;
-    int slp1;
-    int slp2;
     int total = 0;
     while(Luhncredit >= 10)
     {

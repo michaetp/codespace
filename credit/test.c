@@ -8,32 +8,33 @@ int main(void)
     credit = get_long("Number: ");
     long originalcredit = credit;
     long Luhncredit = credit;
-    int lastno;
-    int s_lastno;
-    int slp1;
-    int slp2;
     int total = 0;
-    while(Luhncredit >= 10)
+    int position = 0;
+
+    while (Luhncredit > 0)
     {
-        lastno = Luhncredit % 10;
-        s_lastno = (Luhncredit / 10) % 10;
-        if((2 * s_lastno) > 9)
+        int digit = Luhncredit % 10;
+        if (position % 2 == 1)
         {
-            slp1 = s_lastno % 10;
-            slp2 = s_lastno / 10;
-            total = total + lastno + slp1 + slp2;
+            int doubled = digit * 2;
+            total += doubled % 10 + doubled / 10;
         }
         else
         {
-            total = total + lastno + (2 * s_lastno);
+            total += digit;
         }
-        Luhncredit = Luhncredit / 100;
+        Luhncredit /= 10;
+        position++;
     }
-    while(Luhncredit < 10 && Luhncredit > 0)
+
+    if (total % 10 == 0)
     {
-        lastno = Luhncredit % 10;
-        total = total + lastno;
-        Luhncredit = Luhncredit / 10;
+        printf("%i\n", total);
     }
-    printf("%i\n", total);
+    else
+    {
+        printf("INVALID\n");
+    }
+
+    return 0;
 }

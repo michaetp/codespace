@@ -39,6 +39,10 @@ int main(void)
     {
         printf("VISA\n");
     }
+    else
+    {
+        printf("INVALID\n");
+    }
 
 }
 
@@ -65,3 +69,4 @@ bool isVISA16(long originalcredit)
     long first_digit = originalcredit / pow(10,15);
     return (first_digit == 4);
 }
+

@@ -103,6 +103,7 @@ bool LUHN(long Luhncredit)
     while(Luhncredit < 10)
     {
         
+        Luhncredit = Luhncredit / 10
     }
     return((total % 10) == 0);
 }

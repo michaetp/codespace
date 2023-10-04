@@ -11,7 +11,7 @@ bool LUHN(long Luhncredit);
 int main(void)
 {
     long credit;
-    credit = get_long("Credit Number: ");
+    credit = get_long("Number: ");
     long originalcredit = credit;
     long Luhncredit = credit;
 
@@ -21,7 +21,6 @@ int main(void)
         credit = (credit / 10);
         countno = countno + 1;
     }
-    printf("%i\n", countno);
 
 //Check if AMEX
     if(countno == 15 && isAMEX(originalcredit))

@@ -25,7 +25,7 @@ int main(void)
 //Check if Luhn algorithm pass
     if(!LUHN(Luhncredit))
     {
-        printf("%B\n",);
+        printf("INVALID\n");
     }
     else
     {

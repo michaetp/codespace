@@ -86,8 +86,5 @@ bool LUHN(long Luhncredit)
     {
         return true;
     }
-    else
-    {
-        return false;
-    }
+    return false;
 }

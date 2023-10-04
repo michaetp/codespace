@@ -55,13 +55,13 @@ int main(void)
 
 bool isAMEX(long originalcredit)
 {
-    long first_two_digits = originalcredit / (10000000000000);
+    long first_two_digits = originalcredit / pow(10,13);
     return (first_two_digits == 34 || first_two_digits == 37);
 }
 
 bool isMC(long originalcredit)
 {
-    long first_two_digits = originalcredit / (100000000000000);
+    long first_two_digits = originalcredit / pow(10,14);
     return (first_two_digits >= 51 && first_two_digits <= 55);
 }
 

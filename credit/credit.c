@@ -27,33 +27,16 @@ int main(void)
         printf("AMEX\n");
     }
 
-
-
-
 //Check if MasterCard or VISA
-    if(countno == 16)
+    if(countno == 16 && isMC(originalcredit))
     {
-        long first_two_digits = originalcredit / pow(10,14);
-        if(first_two_digits >= 51 || first_two_digits <= 55)
-        {
-            printf("MASTERCARD\n");
-        }
-
-        long first_digit = originalcredit / pow(10,15);
-        if(first_digit == 4)
-        {
-            printf("VISA\n");
-        }
+        printf("MASTERCARD\n");
     }
 
-// Check if VISA 13
-    if(countno == 13)
+// Check if VISA
+    if((countno == 13 || countno == 16) && isVISA(originalcredit))
     {
-        long first_digit = originalcredit / pow(10,12);
-        if(first_digit == 4)
-        {
-            printf("VISA\n");
-        }
+        printf("VISA\n");
     }
 
 }
@@ -61,17 +44,17 @@ int main(void)
 bool isAMEX(long originalcredit)
 {
     long first_two_digits = originalcredit / pow(10,13);
-    return (first_two_digits == 34 || first_two_digits == 37)
+    return (first_two_digits == 34 || first_two_digits == 37);
 }
 
 bool isMC(long originalcredit)
 {
     long first_two_digits = originalcredit / pow(10,14);
-    return (first_two_digits >= 51 && first_two_digits <= 55)
+    return (first_two_digits >= 51 && first_two_digits <= 55);
 }
 
 bool isVISA(long originalcredit)
 {
     long first_digit = originalcredit / pow(10,12);
-    return (first_digit == 4)
+    return (first_digit == 4);
 }

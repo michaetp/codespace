@@ -82,5 +82,8 @@ bool LUHN(long Luhncredit)
         total = total + lastno + (2* s_lastno);
         Luhncredit = Luhncredit / 100;
     }
-    return true;
+    if((total % 10) == 0)
+    {
+        return true;
+    }
 }

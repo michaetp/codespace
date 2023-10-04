@@ -7,5 +7,5 @@ int main(void)
     long c = get_long("Number: ");
     int m = (c/10) % 10;
 
-    printf("%i\n", m);
+    printf("%i, %li\n", m,c);
 }

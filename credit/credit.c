@@ -75,15 +75,13 @@ bool LUHN(long Luhncredit)
 {
     long lastno;
     long s_lastno;
-    long sum1;
     long total;
-    while(Luhncredit > 99)
+    while(Luhncredit > 0)
     {
-        lastno = Luhncredit % 10
+        lastno = Luhncredit % 10;
         s_lastno = (Luhncredit / 10) % 10;
-        sum1 = sum1 + (second_to_last * 2);
+        total = total + lastno + (2* s_lastno);
         Luhncredit = Luhncredit / 100;
     }
-
     return true;
 }

@@ -22,20 +22,12 @@ int main(void)
     printf("%i\n", countno);
 
 //Check if AMEX
-    if(countno == 15)
+    if(countno == 15 && isAMEX(originalcredit))
     {
-        long first_two_digits = originalcredit / pow(10,13);
-        if(first_two_digits == 34 || first_two_digits == 37)
-        {
-            printf("AMEX\n");
-        }
+        printf("AMEX\n");
     }
 
-bool isAMEX(long originalcredit)
-{
-    long first_two_digits = originalcredit / pow(10,13);
-    if(first_two_digits == 34 || first_two_digits == 37)
-}
+
 
 
 //Check if MasterCard or VISA
@@ -66,3 +58,20 @@ bool isAMEX(long originalcredit)
 
 }
 
+bool isAMEX(long originalcredit)
+{
+    long first_two_digits = originalcredit / pow(10,13);
+    return (first_two_digits == 34 || first_two_digits == 37)
+}
+
+bool isMC(long originalcredit)
+{
+    long first_two_digits = originalcredit / pow(10,14);
+    return (first_two_digits >= 51 && first_two_digits <= 55)
+}
+
+bool isVISA(long originalcredit)
+{
+    long first_digit = originalcredit / pow(10,12);
+    return (first_digit == 4)
+}

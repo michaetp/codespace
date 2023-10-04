@@ -4,7 +4,8 @@
 
 bool isAMEX(long originalcredit);
 bool isMC(long originalcredit);
-bool isVISA(long originalcredit);
+bool isVISA13(long originalcredit);
+bool isVISA16(long originalcredit);
 
 int main(void)
 {
@@ -34,7 +35,7 @@ int main(void)
     }
 
 // Check if VISA
-    if((countno == 13 || countno == 16) && isVISA(originalcredit))
+    if((countno == 13 && isVISA13(originalcredit)) || (countno == 16 && isVISA16(originalcredit)))
     {
         printf("VISA\n");
     }
@@ -53,8 +54,14 @@ bool isMC(long originalcredit)
     return (first_two_digits >= 51 && first_two_digits <= 55);
 }
 
-bool isVISA(long originalcredit)
+bool isVISA13(long originalcredit)
 {
     long first_digit = originalcredit / pow(10,12);
+    return (first_digit == 4);
+}
+
+bool isVISA16(long originalcredit)
+{
+    long first_digit = originalcredit / pow(10,15);
     return (first_digit == 4);
 }

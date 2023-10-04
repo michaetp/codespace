@@ -84,7 +84,7 @@ bool LUHN(long Luhncredit)
     int slp1;
     int slp2;
     long total=0;
-    while(Luhncredit > 0)
+    while(Luhncredit >= 10)
     {
         lastno = Luhncredit % 10;
         s_lastno = (Luhncredit / 10) % 10;
@@ -99,6 +99,10 @@ bool LUHN(long Luhncredit)
             total = total + lastno + (2 * s_lastno);
         }
         Luhncredit = Luhncredit / 100;
+    }
+    while(Luhncredit < 10)
+    {
+        
     }
     return((total % 10) == 0);
 }

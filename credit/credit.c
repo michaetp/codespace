@@ -100,10 +100,11 @@ bool LUHN(long Luhncredit)
         }
         Luhncredit = Luhncredit / 100;
     }
-    while(Luhncredit < 10)
+    while(Luhncredit < 10 && )
     {
-        
-        Luhncredit = Luhncredit / 10
+        lastno = Luhncredit % 10;
+        total = total + lastno;
+        Luhncredit = Luhncredit / 10;
     }
     return((total % 10) == 0);
 }

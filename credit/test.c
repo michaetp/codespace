@@ -27,13 +27,13 @@ int main(void)
         {
             total += lastno + (2 * s_lastno);
         }
-        Luhncredit = Luhncredit / 100;
+        Luhncredit /= 100;
     }
     while(Luhncredit < 10 && Luhncredit > 0)
     {
         lastno = Luhncredit % 10;
         total += lastno;
-        Luhncredit = Luhncredit / 100;
+        Luhncredit /= 100;
     }
     printf("%i\n", total);
 }

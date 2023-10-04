@@ -2,6 +2,10 @@
 #include <stdio.h>
 #include <math.h>
 
+bool isAMEX(long originalcredit);
+bool isMC(long originalcredit);
+bool isVISA(long originalcredit);
+
 int main(void)
 {
     long credit;
@@ -27,7 +31,11 @@ int main(void)
         }
     }
 
-bool isAMEX(long )
+bool isAMEX(long originalcredit)
+{
+    long first_two_digits = originalcredit / pow(10,13);
+    if(first_two_digits == 34 || first_two_digits == 37)
+}
 
 
 //Check if MasterCard or VISA

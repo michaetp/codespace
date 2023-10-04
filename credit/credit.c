@@ -76,8 +76,9 @@ bool LUHN(long Luhncredit)
     long second_to_last;
     long sum1;
     while(Luhncredit > 99)
-    second_to_last = ((Luhncredit / 10) % 10) * 2;
-
-    sum1 = sum1 + second_to_last
+    {
+        second_to_last = ((Luhncredit / 10) % 10) * 2;
+        sum1 = sum1 + second_to_last;
+    }
     Luhncredit = Luhncredit / 100;
 }

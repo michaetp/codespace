@@ -81,7 +81,7 @@ bool LUHN(long Luhncredit)
 {
     long lastno;
     long s_lastno;
-    long total;
+    long total=0;
     while(Luhncredit > 0)
     {
         lastno = Luhncredit % 10;
